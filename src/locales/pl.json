@@ -1,0 +1,27 @@
+{
+  "welcome": "Witajcie na mojej stronie - Mr. Decal.",
+  "whoami": {
+    "header": "Kim jestem?",
+    "paragraph": [
+      "Modelarzem... Modelarstwem zajmuję się praktycznie całe życie. Pierwszy model skleiłem mając sześć czy siedem lat – chyba większość z nas tak zaczynała. Lata płynęły, półki się zapełniały, ukierunkowywało się moje modelarstwo. Teraz to głównie myśliwce z II Wojny Światowej ze szczególnym naciskiem na Supermarine Spitfire.",
+      "Jakiś czas temu zająłem się żywicznymi odlewami a później projektowaniem kalkomanii. Rysowałem dla Model Makera, Brenguna, dla Karaya i kilku innych firm. Od kilku lat staram się pomagać braci modelarskiej w zdobywaniu tych \"jedynych i wymarzonych\" oznakowań do ich modeli. Uwieńczeniem tego było powstanie Mr. Decal – taką ksywkę dał mi mój przyjaciel-modelarz, Artur. A więc witajcie!"
+    ]
+  },
+  "whathere": {
+    "header": "Co tu będzie?",
+    "paragraph": "Przede wszystkim katalog istniejących wzorów kalkomanii i masek, które w miarę tworzenia nowych projektów bedzie się powiększał."
+  },
+  "howorder": {
+    "header": "Jak zamawiać?",
+    "paragraph": [
+      "Pisząc na mojego maila:",
+      ", firmowego Messengera:",
+      ", lub mój prywatny profil Bogdan Żołnierowicz. Wpłaty proszę dokonywać na konto jakie podam przy uzgodnieniu szczegółów zamówienia."
+    ]
+  },
+  "greeting": "Pozdrawiam!",
+  "main": "Strona główna",
+  "pricing": "Cennik",
+  "airplanes": "Lotnictwo",
+  "trains": "Kolej"
+}

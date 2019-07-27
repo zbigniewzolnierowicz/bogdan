@@ -1,12 +1,12 @@
 <template>
   <div class="model box columns">
-    <div class="column is-four-fifths">
+    <div class="column is-three-fifths">
       <h1 class="title">{{ id }}</h1>
       <h2 class="subtitle">{{ description }}</h2>
       <img :src="image" :alt="description" />
     </div>
     <div class="column">
-      <table class="table">
+      <table class="table is-fullwidth">
         <thead v-if="category === 'kolej'">
           <th>TT</th>
           <th>H0</th>
@@ -39,8 +39,7 @@ export default {
     return {
       imageLink: ""
     };
-  },
-  mounted() {}
+  }
 };
 </script>
 

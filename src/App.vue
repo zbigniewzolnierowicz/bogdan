@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="">
+  <div id="app">
     <nav
       class="navbar is-fixed-top"
       role="navigation"
@@ -27,22 +27,35 @@
       <div id="mainNavbar" class="navbar-menu">
         <div class="navbar-start">
           <router-link to="/" class="navbar-item">
-            Strona główna
+            <span class="icon"><font-awesome-icon icon="home"/></span>
+            {{ $t("main") }}
           </router-link>
+
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
-              Cennik
+              <span class="icon"><font-awesome-icon icon="money-bill"/></span>
+              {{ $t("pricing") }}
             </a>
 
             <div class="navbar-dropdown">
-              <router-link to="/pricing/kolej" class="navbar-item">
-                Kolej
-              </router-link>
               <router-link to="/pricing/lotnictwo" class="navbar-item">
-                Lotnictwo
+                <span class="icon"><font-awesome-icon icon="plane"/></span>
+                {{ $t("airplanes") }}
+              </router-link>
+              <router-link to="/pricing/kolej" class="navbar-item">
+                <span class="icon"><font-awesome-icon icon="train"/></span>
+                {{ $t("trains") }}
               </router-link>
             </div>
           </div>
+        </div>
+        <div class="navbar-end">
+          <a v-on:click="$i18n.locale = 'pl'" class="navbar-item"
+            ><span class="flag-icon flag-icon-pl"></span
+          ></a>
+          <a v-on:click="$i18n.locale = 'en'" class="navbar-item"
+            ><span class="flag-icon flag-icon-gb"></span
+          ></a>
         </div>
       </div>
     </nav>
@@ -57,6 +70,7 @@
 
 <script>
 import { db, storage } from "./firebase";
+import "flag-icon-css/css/flag-icon.min.css";
 export default {
   name: "App",
   methods: {
@@ -87,13 +101,16 @@ export default {
       modelsRef.forEach(doc => {
         const model = doc.data();
         let pathRef = storage.ref(`lotnictwo/${model.id}.jpg`);
-        pathRef.getDownloadURL().then(url => {
-          model.image = url;
-          this.$store.commit("ADD_MODEL", {
-            target: "lotnictwo",
-            content: model
-          });
-        });
+        pathRef
+          .getDownloadURL()
+          .then(url => {
+            model.image = url;
+            this.$store.commit("ADD_MODEL", {
+              target: "lotnictwo",
+              content: model
+            });
+          })
+          .catch(err => console.log(err));
       });
     });
   }
@@ -108,5 +125,8 @@ export default {
 }
 .hero-body img {
   height: 40vh;
+}
+.icon {
+  padding: 0 20px;
 }
 </style>

@@ -1,0 +1,27 @@
+{
+  "welcome": "Welcome to my website - Mr. Decal.",
+  "whoami": {
+    "header": "Who am I?",
+    "paragraph": [
+      "A modeller... I've been making models my entire life. I made my first model when I was 6 or 7 - most of us started this way, I think. Years passed, the shelves filled up, I directed my model work. Nowadays, it's mainly World War 2 era fighters with a particular emphasis on Supermarine Spitfire.",
+      "A while back, I started making resin casts and then I picked up decal design. I drew for Model Maker, Brengun, Karay, and several other firms. For a couple years I've been trying to help my model making comerades in finding those \"once in a lifetime\" markings for their models. The finalization of that was the creation of Mr. Decal - that nickname was given to me by my friend-model builder, Artur. So, welcome!"
+    ]
+  },
+  "whathere": {
+    "header": "What will be here?",
+    "paragraph": "First and foremost, a catalog of existing decals and masks, which I will update as I make new projects."
+  },
+  "howorder": {
+    "header": "How do I order?",
+    "paragraph": [
+      "You can contact me by e-mail:",
+      ", by Messenger:",
+      ", or via my private Facebook account: Bogdan Żołnierowicz. Please, make all deposits to the account I give you after we talk out the details of the order."
+    ]
+  },
+  "greeting": "Cheers!",
+  "main": "Main page",
+  "pricing": "Pricing",
+  "airplanes": "Airplanes",
+  "trains": "Trains"
+}
