@@ -12,6 +12,13 @@
           <th>H0</th>
           <th>1:35</th>
         </thead>
+        <thead v-if="category === 'maski'">
+          <th>1:144</th>
+          <th>1:72</th>
+          <th>1:48</th>
+          <th>1:32</th>
+          <th>1:24</th>
+        </thead>
         <thead v-else>
           <th>1:144</th>
           <th>1:72</th>

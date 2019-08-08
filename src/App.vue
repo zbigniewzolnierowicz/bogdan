@@ -46,6 +46,10 @@
                 <span class="icon"><font-awesome-icon icon="train"/></span>
                 {{ $t("trains") }}
               </router-link>
+              <router-link to="/pricing/maski" class="navbar-item">
+                <!--<span class="icon"><font-awesome-icon icon="train"/></span>-->
+                {{ $t("masks") }}
+              </router-link>
             </div>
           </div>
         </div>
@@ -84,6 +88,7 @@ export default {
   created() {
     const kolejCollection = db.collection("kolej");
     const lotnictwoCollection = db.collection("lotnictwo");
+    const maskiCollection = db.collection("maski");
     kolejCollection.onSnapshot(modelsRef => {
       modelsRef.forEach(doc => {
         const model = doc.data();
@@ -111,6 +116,20 @@ export default {
             });
           })
           .catch(err => console.log(err));
+      });
+    });
+    maskiCollection.onSnapshot(modelsRef => {
+      modelsRef.forEach(doc => {
+        console.log(doc.data());
+        const model = doc.data();
+        let pathRef = storage.ref(`maski/${model.id}.jpg`);
+        pathRef.getDownloadURL().then(url => {
+          model.image = url;
+          this.$store.commit("ADD_MODEL", {
+            target: "maski",
+            content: model
+          });
+        });
       });
     });
   }

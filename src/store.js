@@ -6,7 +6,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     kolej: [],
-    lotnictwo: []
+    lotnictwo: [],
+    maski: []
   },
   mutations: {
     ADD_MODEL(state, payload) {
