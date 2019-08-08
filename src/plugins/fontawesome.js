@@ -5,10 +5,11 @@ import {
   faPlane,
   faTrain,
   faHome,
-  faMoneyBill
+  faMoneyBill,
+  faMask
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faPlane, faTrain, faHome, faMoneyBill);
+library.add(faPlane, faTrain, faHome, faMoneyBill, faMask);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

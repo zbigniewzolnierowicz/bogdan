@@ -47,7 +47,7 @@
                 {{ $t("trains") }}
               </router-link>
               <router-link to="/pricing/maski" class="navbar-item">
-                <!--<span class="icon"><font-awesome-icon icon="train"/></span>-->
+                <span class="icon"><font-awesome-icon icon="mask"/></span>
                 {{ $t("masks") }}
               </router-link>
             </div>
