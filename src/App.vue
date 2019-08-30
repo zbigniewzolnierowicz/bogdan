@@ -73,6 +73,17 @@
       </div>
     </section>
     <router-view class="section" />
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          The website for <strong>Mr. Decal</strong> was created by
+          <a href="https://zbigniew.zolnierowi.cz">Zbigniew Żołnierowicz</a>
+          using <a href="https://bulma.io/">Bulma</a>,
+          <a href="https://vuejs.org/">Vue.js</a> and is hosted on
+          <a href="https://firebase.google.com/">Firebase</a>.
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
