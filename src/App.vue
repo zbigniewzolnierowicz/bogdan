@@ -7,7 +7,7 @@
     >
       <div class="navbar-brand">
         <router-link class="navbar-item" to="/">
-          <img src="./assets/logo.svg" width="80" height="28" />
+          <img src="./assets/logo.svg" width="80" height="28" alt="Logo" />
         </router-link>
 
         <a
@@ -65,7 +65,11 @@
     </nav>
     <section class="hero">
       <div class="hero-body">
-        <img src="./assets/banner.svg" class="image is-pulled-right" />
+        <img
+          src="./assets/banner.svg"
+          class="image is-pulled-right"
+          alt="Banner strony"
+        />
       </div>
     </section>
     <router-view class="section" />
