@@ -88,7 +88,7 @@
 </template>
 
 <script>
-import { db, storage } from "./firebase";
+import { db, storage, auth } from "./firebase";
 import "flag-icon-css/css/flag-icon.min.css";
 export default {
   name: "App",
@@ -100,7 +100,8 @@ export default {
       expando.classList.toggle("is-active");
     }
   },
-  created() {
+  async created() {
+    await auth.signInAnonymously();
     const kolejCollection = db.collection("kolej");
     const lotnictwoCollection = db.collection("lotnictwo");
     const maskiCollection = db.collection("maski");

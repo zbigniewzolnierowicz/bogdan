@@ -10,7 +10,8 @@
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
   "dependencies": {
-    "@firebase/app": "^0.4.11",
+    "@firebase/app": "^0.6.9",
+    "@firebase/auth": "^0.14.9",
     "@firebase/firestore": "^1.4.5",
     "@firebase/storage": "^0.3.6",
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
